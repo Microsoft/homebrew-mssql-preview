@@ -3,7 +3,7 @@ class Msodbcsql < Formula
   homepage "https://msdn.microsoft.com/en-us/library/mt654048(v=sql.1).aspx"
   url "https://deve2e.azureedge.net/sqlchoice/msodbcsql-13.1.4.0.tar.gz"
   version "13.1.4.0"
-  sha256 "99232cb5ac59f99f73f07aae6c597e1c38bcbeb52605dd6cf2d24422396a1ca1"
+  sha256 "832039a56e54e4855236cd087269f39dda2ee297af18b46adfd97f57fe93e781"
 
   option "without-registration", "Don't register the driver in odbcinst.ini"
 
@@ -22,7 +22,7 @@ class Msodbcsql < Formula
   def check_eula_acceptance
     if ENV["ACCEPT_EULA"] != "y" and ENV["ACCEPT_EULA"] != "Y" then
       puts "The license terms for this product can be downloaded from"
-      puts "http://go.microsoft.com/fwlink/?LinkId=746838 and found in"
+      puts "https://aka.ms/odbc131eula and found in"
       puts "/usr/local/share/doc/msodbcsql/LICENSE.txt . By entering 'YES',"
       puts "you indicate that you accept the license terms."
       puts ""
