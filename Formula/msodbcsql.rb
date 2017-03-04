@@ -1,9 +1,9 @@
 class Msodbcsql < Formula
   desc "ODBC Driver for Microsoft(R) SQL Server(R)"
   homepage "https://msdn.microsoft.com/en-us/library/mt654048(v=sql.1).aspx"
-  url "https://deve2e.azureedge.net/sqlchoice/msodbcsql-13.1.4.0.tar.gz"
-  version "13.1.4.0"
-  sha256 "832039a56e54e4855236cd087269f39dda2ee297af18b46adfd97f57fe93e781"
+  url "https://deve2e.azureedge.net/sqlchoice/msodbcsql-13.1.5.0.tar.gz"
+  version "13.1.5.0"
+  sha256 "9639852047b2ac5078c8b4aec080454030676724c8c095af639736835debd10f"
 
   option "without-registration", "Don't register the driver in odbcinst.ini"
 
@@ -28,7 +28,7 @@ class Msodbcsql < Formula
       puts ""
       while true do
         puts "Do you accept the license terms? (Enter YES or NO)"
-		accept_eula = STDIN.gets.chomp
+        accept_eula = STDIN.gets.chomp
         if accept_eula then
           if accept_eula == "YES" then
             break
