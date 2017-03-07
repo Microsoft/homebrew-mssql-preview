@@ -1,7 +1,7 @@
 class Msodbcsql < Formula
   desc "ODBC Driver for Microsoft(R) SQL Server(R)"
   homepage "https://msdn.microsoft.com/en-us/library/mt654048(v=sql.1).aspx"
-  url "https://deve2e.azureedge.net/sqlchoice/msodbcsql-13.1.5.0.tar.gz"
+  url "http://download.microsoft.com/download/4/9/5/495639C0-79E4-45A7-B65A-B264071C3D9A/msodbcsql-13.1.5.0.tar.gz"
   version "13.1.5.0"
   sha256 "9639852047b2ac5078c8b4aec080454030676724c8c095af639736835debd10f"
 
